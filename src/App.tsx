@@ -6,7 +6,7 @@ import Technologies from "./Technologies";
 function App() {
     return (
         <div>
-            <Header/>
+            {/*<Header/>*/}
             <Technologies/>
         </div>
     );
