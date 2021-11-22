@@ -2,11 +2,11 @@ import React from "react";
 import s from "./NavBar.module.css";
 import {NavLink} from "react-router-dom";
 
-type Active = {
+type ActiveType = {
     isActive: boolean
 }
 
-const setActive = ({isActive}:Active)=>isActive ? s.activeLink : '';
+const setActive = ({isActive}:ActiveType)=>isActive ? s.activeLink : '';
 
 const NavBar = () => {
     return (
