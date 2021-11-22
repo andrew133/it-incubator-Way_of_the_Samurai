@@ -1,9 +1,10 @@
 import React from "react";
-import s from './Dialogs.module.css'
-const Dialogs = (  ) => {
+import './Dialogs.module.css'
+import {NavLink} from "react-router-dom";
+const Dialogs = () => {
     return (
         <div>
-            Dialog
+            Dialoges
         </div>
     )
 }
