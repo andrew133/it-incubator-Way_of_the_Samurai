@@ -6,6 +6,9 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
+
+
+
 function App() {
     return (
         <BrowserRouter>
@@ -17,6 +20,8 @@ function App() {
                         <Route path="/profile" element={<Profile/>}/>
                         <Route path="/dialogs" element={<Dialogs/>}/>
 
+
+
                         {/*<Route path = "/profile" element={<Profile />}/>*/}
                     </Routes>
                 </div>
@@ -25,5 +30,5 @@ function App() {
 
     );
 }
-
+debugger
 export default App;

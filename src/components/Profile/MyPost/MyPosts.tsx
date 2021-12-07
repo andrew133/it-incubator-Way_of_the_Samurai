@@ -1,13 +1,20 @@
 import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
+import Profile from "../Profile";
 
-const MyPosts = () => {
-    let posts = [
-        {id: 1, message: "Hi, how are you?", likesCount: 5},
-        {id: 2, message: "It's my first post.", likesCount: 11},
-    ]
-    let postElement = [posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)]
+export type MyPostType = {
+posts: Array<{
+    id: number
+    message: string
+    likesCount: number
+}>
+}
+debugger
+const MyPosts = (props: MyPostType) => {
+    let postElement =
+        props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
+debugger
     return (
         <div className={s.postBlog}>
             <h3>My posts</h3>
