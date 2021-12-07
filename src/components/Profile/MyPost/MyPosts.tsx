@@ -2,18 +2,13 @@ import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import Profile from "../Profile";
+import {state} from "../../../index";
 
-export type MyPostType = {
-posts: Array<{
-    id: number
-    message: string
-    likesCount: number
-}>
-}
+
 debugger
-const MyPosts = (props: MyPostType) => {
+const MyPosts = () => {
     let postElement =
-        props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
+        state.profilePage.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
 debugger
     return (
         <div className={s.postBlog}>

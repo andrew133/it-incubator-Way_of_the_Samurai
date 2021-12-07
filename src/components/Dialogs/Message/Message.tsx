@@ -1,13 +1,11 @@
 import React from "react";
 import s from './../Dialogs.module.css';
+import {state} from "../../../index";
 
 
- type MessageType = {
-    message: string
-    id: number
-}
-const Message = (props:MessageType) => {
-    return <div className={s.dialog}>{props.message}</div>
+
+const Message = () => {
+    return <div className={s.dialog}>{state.dialogPage.messageData}</div>
 }
 
 export default Message;

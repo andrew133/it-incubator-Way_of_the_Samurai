@@ -1,18 +1,16 @@
 import React from "react";
 // import './Profile.module.css';
 import s from "./Profile.module.css";
-import MyPosts from "./MyPost/MyPosts";
+import MyPosts, {MyPostType} from "./MyPost/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import {state} from "../../index";
 
-const Profile = (props:any) => {
-    let posts = [
-        {id: 1, message: "Hi, how are you?", likesCount: 5},
-        {id: 2, message: "It's my first post.", likesCount: 11},
-    ]
+const Profile = () => {
+
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts posts={posts}/>
+            <MyPosts posts={state.profilePage.posts}/>
         </div>
     )
 }
