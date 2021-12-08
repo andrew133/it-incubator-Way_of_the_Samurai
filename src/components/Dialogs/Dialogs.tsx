@@ -2,7 +2,7 @@ import React from "react";
 import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogsItem";
 import Message from "./Message/Message";
-import {DialogPageType, StateType} from "../../Rudax/state";
+import {DialogPageType, StateType} from "../../Redax/state";
 
 type DialogsType = {
     dialogPage: DialogPageType

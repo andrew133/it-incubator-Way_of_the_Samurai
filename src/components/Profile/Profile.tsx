@@ -1,7 +1,7 @@
 import React from "react";
 import MyPosts from "./MyPost/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import { ProfilePageType, StateType} from "../../Rudax/state";
+import { ProfilePageType, StateType} from "../../Redax/state";
 
 
 type ProfileType = {

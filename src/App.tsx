@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import {StateType} from "./Rudax/state";
+import {StateType} from "./Redax/state";
 
 
 type AppPropsType = {
@@ -14,7 +14,7 @@ type AppPropsType = {
 
 function App(props: AppPropsType) {
     return (
-        <BrowserRouter>
+
             <div className='app-wrapper'>
                 <Header/>
                 <NavBar/>
@@ -27,7 +27,7 @@ function App(props: AppPropsType) {
                     </Routes>
                 </div>
             </div>
-        </BrowserRouter>
+
 
     );
 }

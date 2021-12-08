@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
-import {PostsType} from "../../../Rudax/state";
+import {PostsType} from "../../../Redax/state";
 
 
 type MyPosts = {

@@ -1,6 +1,6 @@
 import React from "react";
 import s from './../Dialogs.module.css';
-import {MessageDataType} from "../../../Rudax/state";
+import {MessageDataType} from "../../../Redax/state";
 type Message = {
 
 }
