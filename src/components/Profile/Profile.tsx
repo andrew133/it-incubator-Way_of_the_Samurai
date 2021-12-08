@@ -1,16 +1,17 @@
 import React from "react";
 import MyPosts from "./MyPost/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import {PostsType} from "../../index";
+import { ProfilePageType, StateType} from "../../Rudax/state";
+
 
 type ProfileType = {
-    posts: PostsType[]
+    profilePage: ProfilePageType
 }
 const Profile = (props: ProfileType) => {
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts posts={props.posts}/>
+            <MyPosts posts={props.profilePage.posts}/>
         </div>
     )
 }

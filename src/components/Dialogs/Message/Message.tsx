@@ -1,6 +1,9 @@
 import React from "react";
 import s from './../Dialogs.module.css';
-import {MessageDataType} from "../../../index";
+import {MessageDataType} from "../../../Rudax/state";
+type Message = {
+
+}
 
 const Message = (props: MessageDataType) => {
     debugger

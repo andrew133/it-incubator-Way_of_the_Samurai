@@ -1,7 +1,8 @@
 import React from "react";
 import s from './../Dialogs.module.css';
 import {NavLink} from "react-router-dom";
-import {DialogDataType} from "../../../index";
+import {DialogDataType} from "../../../Rudax/state";
+
 
 const DialogItem = (props: DialogDataType) => {
     let path = "/dialog/" + props.name

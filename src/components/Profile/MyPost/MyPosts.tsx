@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
-import {PostsType} from "../../../index";
+import {PostsType} from "../../../Rudax/state";
+
 
 type MyPosts = {
     posts: PostsType[]
@@ -15,7 +16,7 @@ const MyPosts = (props: MyPosts) => {
             <h3>My posts</h3>
             <div>
                 <div>
-                    <textarea>  </textarea>
+                    <textarea> </textarea>
                 </div>
                 <div>
                     <button>Add post</button>
