@@ -19,7 +19,7 @@ const MyPosts = (props: MyPosts) => {
                     <textarea> </textarea>
                 </div>
                 <div>
-                    <button>Add post</button>
+                    <button onClick={}>Add post</button>
                 </div>
 
             </div>
