@@ -6,20 +6,30 @@ import {PostsType} from "../../../Redax/state";
 
 type MyPosts = {
     posts: PostsType[]
+
 }
+
 
 const MyPosts = (props: MyPosts) => {
     let postElement =
         props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
+
+    let newPostElement = React.createRef<HTMLTextAreaElement>();
+
+    let addPost = ()=>{
+        debugger;
+        let tex = newPostElement.current?.value
+        alert(tex);
+    }
     return (
         <div className={s.postBlog}>
             <h3>My posts</h3>
             <div>
                 <div>
-                    <textarea> </textarea>
+                    <textarea ref={newPostElement}> </textarea>
                 </div>
                 <div>
-                    <button>Add post</button>
+                    <button onClick={addPost}>Add post</button>
                 </div>
 
             </div>
